@@ -1,0 +1,11 @@
+import java.util.Comparator;
+
+/**
+ * Compares year of education in ascending order
+ */
+public class YearOfEducationComparator implements Comparator<Student> {
+    @Override
+    public int compare(Student o1, Student o2) {
+        return Integer.compare(o1.getYearOfEducation(), o2.getNumberInGroup());
+    }
+}
